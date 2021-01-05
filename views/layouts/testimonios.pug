@@ -1,0 +1,10 @@
+.row.testimoniales
+    each comentario in comentarios
+        .col-md-6.col-lg-4.mb-4
+            .card
+                .card-body
+                    p.mb-0
+                        | #{comentario.mensaje}
+                    footer.blockquote-footer
+                        | #{comentario.nombre}
+        
